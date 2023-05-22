@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Compra tu Ticket</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header-pages">
+      <!--Navegación-->
+      <div class="header-main-pages">
+        <div class="header-logo">
+          <a href="/index.html" >
+            <img class="cac-logo" src="/assets/img/logo-cac.png" alt="Logo Codo a Codo"/>
+          </a>
+          <h2 class="header-title">Conf BsAs</h2>
+        </div>
+        <nav>
+          <ul class="header-links">
+            <li><a class="nav-links" href="/index.html#conferencia">La Conferencia</a></li>
+            <li><a class="nav-links" href="/index.html#oradores">Los Oradores</a></li>
+            <li><a class="nav-links" href="/index.html#lugar-fecha">El lugar y la fecha</a></li>
+            <li><a class="nav-links" href="/index.html#participa">Conviértete en Orador</a></li>
+            <li><a class="nav-links-accent" href="/pages/tickets.html">Comprar Tickets</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--Hero-->
+      <div class="hero-container-tickets">
+        <div class="hero-empty"></div>
+        <div class="hero-content">
+          <h2 class="hero-title">Venta de Tickets</h2>
+          <p class="hero-text">
+            Al comprar los tickets para la conferencia de tecnología en Buenos Aires,
+             los usuarios pueden obtener acceso a una serie de charlas y presentaciones
+              impartidas por expertos en la materia. Además, tendrán la oportunidad de
+               interactuar con otros profesionales y entusiastas de la tecnología, lo
+                que puede resultar en valiosas conexiones y oportunidades de negocio. </p>
+        </div>
+      </div>
+    </header>
+    <!--Ventas-->
+    <main>
+      <section class="form-section">
+        <h1 class="span-title">Conferencia de tecnología en<br><span class="form-title">Buenos Aires</span></h1>
+        <p class="form-description-tickets">Bienvenido a la Conferencia de Tecnología en Buenos Aires.<br>Aquí puede comprar su ticket para el evento.</p>
+        <h2 class="form-subtitle">Compra de tickets</h2>
+      </section>
+      <section class="planes">
+        <div class="estudiante">
+          <h3 class="planes-title">Estudiante</h3>
+          <p class="descuento">Tiene un descuento</p>
+          <h4 class="percentage">80%</h4>
+          <p class="documentation">* presentar documentación</p>
+        </div>
+        <div class="trainee">
+          <h3 class="planes-title">Trainee</h3>
+          <p class="descuento">Tiene un descuento</p>
+          <h4 class="percentage">50%</h4>
+          <p class="documentation">* presentar documentación</p>
+        </div>
+        <div class="junior">
+          <h3 class="planes-title">Junior</h3>
+          <p class="descuento">Tiene un descuento</p>
+          <h4 class="percentage">15%</h4>
+          <p class="documentation">* presentar documentación</p>
+        </div>
+      </section>
+      <div class="valor">
+        <h2 class="valor-ticket">valor de ticket $200</h2>
+      </div>
+      <section class="form-buy">
+        <div class="datos-personales">
+          <input  class="data-buy" type="text" id="nombre" name="nombre" placeholder="Nombre">
+          <input  class="data-buy" type="text" id="apellido" name="apellido" placeholder="Apellido">
+        </div>
+        <div class="datos-correo">
+          <input  class="data-buy" type="email" id="email" name="email" placeholder="Correo">
+        </div>
+        <div class="datos-compra">
+          <div class="compras-qty">
+            <label class="form-label" for="cantidad">Cantidad de tickets:</label><br>
+            <input class="select-buy" type="number" id="cantidad" name="cantidad" placeholder="Indicar Cantidad"><br>
+          </div>
+          <div class="compras-category">
+            <label class="form-label" for="categoria">Categoría</label><br>
+            <select class="select-buy" id="categoria" name="categoria" placeholder="Seleccionar Categoría">
+                <option value="" disabled selected>Seleccionar Categoría</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+                <option value="publico">Publico General</option>
+            </select>
+          </div>
+        </div>
+        <div class="datos-precio">
+          <p id="monto">Total a Pagar: $</p>
+        </div>
+        <div class="datos-botones">
+            <input class="btn-form-buy btn-filled" type="delete" value="Borrar" />
+            <input class="btn-form-buy btn-filled" type="resume" value="Resumen">
+        </div>
+        <div class="datos-compra-definitiva">
+          <p class="text-compra">Si esta seguro de su compra, pulse el botón <span class="text-comprar-resaltado">comprar</span></p>
+          <div class="datos-resumen-compra">
+            <p id="resumen-compra"></p>
+          </div>
+          <input class="btn-form-def btn-filled" type="buy" value="Comprar">
+        </div>
+      </section>
+      
+    </main>
+    <!--Footer-->
+    <footer class="footer-section">
+        <ul class="footer-nav">
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/faq.html">Preguntas<br>Frecuentes</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/contactanos.html">Contáctanos</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/prensa.html">Prensa</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/conferencias.html">Conferencias</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/tyc.html">Términos y<br>Condiciones</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/privacidad.html">Privacidad</a></li>
+          <li class="nav-elements"><a class="footer-nav-links" href="/pages/estudiantes.html">Estudiantes</a></li>
+        </ul>
+      </footer>
+      <script src="../js/app.js"></script>
+  </body>
+</html>
