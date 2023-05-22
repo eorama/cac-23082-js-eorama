@@ -83,7 +83,7 @@ function mostrarResumen() {
 }
 
 function confirmarCompra() {
-  // Lógica para procesar la compra
+  // Lógica para procesar la compra (No es Necesario)
 }
 
 function borrarDatos() {
@@ -104,5 +104,6 @@ function borrarDatos() {
     totalPagar.textContent = 'Total a Pagar: $';
 }
 
+// POR HACER //
 /* Hay que agregar un bloqueador con un mensaje que indique si se pulsa el 
 boton de resumen y no hay nada ingresado, para que no muestre la sección de resumen-compra */
