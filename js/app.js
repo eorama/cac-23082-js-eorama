@@ -83,7 +83,7 @@ function mostrarResumen() {
 }
 
 function confirmarCompra() {
-  // Lógica para procesar la compra (No es Necesario)
+  // Codigo para procesar la compra (No es Necesario)
 }
 
 function borrarDatos() {
